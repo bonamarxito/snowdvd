@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantacte</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-imagen"><img src="./img/logo.png" alt="Logo de la botiga"></a>
+        </div>
+        <div class="hamburger">
+            <label for="menu-toggle">
+                <img src="./img/ico/hamburger.svg" alt="Menu d'hamburguesa">
+            </label>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Cerca..." class="search-bar">
+            <img src="./img/ico/search.svg" alt="Icone de busqueda" class="search-icon">
+        </div>
+        <nav>
+            <a href="./index.html">Inici</a>
+            <a href="./catalog.html">Productes</a>
+            <a href="./contact.html">Contacte</a>
+        </nav>
+    </header>
+    <input type="checkbox" id="menu-toggle">
+    <div class="menu-mobile">
+        <a href="./index.html">Inici</a>
+        <a href="./catalog.html">Productes</a>
+        <a href="./contact.html">Contacte</a>
+        <div class="search-container2">
+            <input type="text" placeholder="Cerca..." class="search-bar2">
+            <img src="./img/ico/search.svg" alt="Icone de busqueda" class="search-icon2">
+        </div>
+    </div>
+
+       <!-- Pagina de contacte -->
+       <main class="contact-page">
+        <!-- Formulari de Contacte -->
+        <section class="contact-form-section">
+            <h1>Contacte'ns</h1>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Escriu el teu nom" required>
+                
+                <label for="email">Correu Electrònic</label>
+                <input type="email" id="email" name="email" placeholder="El teu correu" required>
+                
+                <label for="message">Missatge</label>
+                <textarea id="message" name="message" placeholder="Escriu un missatge aqui" rows="5" required></textarea>
+                
+                <button type="submit" class="submit-btn">Enviar Missatge</button>
+            </form>
+        </section>
+
+        <!-- Informació de Contacte -->
+        <section class="contact-info-section">
+            <h2>La nostre informació</h2>
+            <p><strong>Telefon:</strong> +34 123 456 789</p>
+            <p><strong>Direcció:</strong> Carrer Fals 123, 08080, Barcelona, España</p>
+            <p><strong>Correu Elctronic:</strong> contacte@snowdvd.com</p>
+        </section>
+
+        <!-- Mapa -->
+        <section class="contact-map">
+            <h2>Ubicació</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8476.271727759105!2d1.9728346155133571!3d41.31289653056545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731800066439!5m2!1ses!2ses" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h4>Contacte'ns</h4>
+                <p>Email: contacte@snowdvd.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+            </div>
+            <div class="social-media">
+                <h4>Segueix-nos a:</h4>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="./img/ico/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                    <img src="./img/ico/youtube.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="./img/ico/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 SNOW DVD. Tots els drets reservats.</p>
+    </footer>
+</body>
+</html>
